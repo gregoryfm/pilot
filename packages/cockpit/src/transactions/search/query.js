@@ -208,10 +208,6 @@ const formatDates = juxt([
 
 const buildRange = pipe(formatDates, mergeAll)
 
-
-// se start E end forem null, ignorar dates
-// Se so start ou so end forem null, ignorar o que for null
-
 const parseDates = ifElse(
   allPass([
     propSatisfies(isNil, 'start'),
