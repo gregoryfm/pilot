@@ -1,5 +1,4 @@
 import {
-  add,
   apply,
   always,
   applySpec,
@@ -14,13 +13,13 @@ import {
   prop,
   propEq,
   props,
-  reduce,
   reject,
   subtract,
   sum,
+  pluck,
 } from 'ramda'
 
-import { transactionObj } from '../../shared'
+import { transactionObj } from '../shared'
 
 const buildOperations = applySpec({
   operations: map(applySpec({
@@ -33,7 +32,7 @@ const buildOperations = applySpec({
 
 const sumInstallmentsAmount = pipe(
   prop('installments'),
-  map(prop('amount')),
+  pluck('amount'),
   sum
 )
 

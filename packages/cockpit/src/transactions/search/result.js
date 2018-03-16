@@ -25,7 +25,7 @@ import {
   when,
 } from 'ramda'
 
-import { transactionObj } from '../../shared'
+import { transactionObj } from '../shared'
 
 const mapSourceToTableRows = applySpec(transactionObj)
 
