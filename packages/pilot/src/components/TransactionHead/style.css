@@ -1,0 +1,40 @@
+.transactionCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-large) var(--spacing-medium);
+}
+
+.transactionInformation {
+  display: flex;
+  align-items: flex-start;
+
+  & > * {
+    margin-right: var(--spacing-small);
+  }
+}
+
+.transactionStatus > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & span {
+    font-size: 14px;
+  }
+}
+
+.transactionLabel {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-tiny);
+}
+
+.transactionId {
+  margin: 0;
+  font-size: 28px;
+  color: var(--color-light-steel-100);
+}
+
+.transactionActions button {
+  margin-left: var(--spacing-small);
+}
